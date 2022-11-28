@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.10.1/dist/sweetalert2.all.min.js"></script>
+    <link rel="stylesheet" href="./stylehome.css">
+    <script src="./scripthome.js"></script>
+    <title>Bem Vindo</title>
+</head>
+<body>
+    <div id="container-imagem"></div>
+    <div class="container">
+        <div class="form-titulo">
+
+        </div>
+        <div class="form">
+            <form class="box" action="index.html" method="post">
+                <h1>Login</h1>
+                <input type="text" name="" id="idlogin" placeholder="Email">
+                <input type="password" name="" id="idsenha" placeholder="Senha">
+                <input id="submit" type="button" name="login" value="Login" onclick="verificarcredencias()">
+                <input type="button" name="registrar" value="Cadastrar-se" href onclick="fazerregistro(); return false">
+            </form>
+        </div>
+    </div>
+
+<script>
+
+document.addEventListener("keypress", function (e) {
+  if (e.key === "Enter") {
+    var btn = document.querySelector("#submit");
+
+    btn.click();
+  }
+});
+
+</script>
+
+</body>
+</html>
